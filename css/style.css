@@ -1,0 +1,164 @@
+body,
+html {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    min-height: 100%;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    display: none;
+}
+
+h2 {
+    margin-bottom: 0px;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none
+}
+
+ul {
+    margin: 0px;
+}
+
+li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+footer {
+    line-height: 50px;
+    vertical-align: middle;
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+.bg-img {
+    background: url("../img/bhopal.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+}
+
+.blue:before {
+    background-color: rgba(4, 4, 4, 0.78);
+}
+
+.bg-img * {
+    position: relative;
+    /* hack */
+}
+
+#dp {
+    margin-top: 10%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #79c9d2;
+    box-shadow: 1px 1px 10px darkslateblue;
+}
+
+
+.job-title {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+
+.fa {
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.btn-download {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid #79c9d2;
+    border-radius: 10%;
+    box-shadow: 1px 1px 10px cyan;
+    text-decoration: none;
+}
+
+.btn-download:hover {
+    box-shadow: none;
+    text-shadow: 1px 1px 10px cyan;
+}
+
+.intro {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: block;
+}
+
+
+@media screen and (max-width: 500px) {
+    .intro {
+        width: 90% !important;
+        font-size: 15px;
+    }
+    #dp {
+        width: 100px;
+        height: 100px;
+    }
+    .quote {
+        display: inline-block;
+        margin: 5px;
+    }
+    footer {
+        line-height: normal;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .right {
+        float: right;
+    }
+    .left {
+        float: left;
+    }
+}
